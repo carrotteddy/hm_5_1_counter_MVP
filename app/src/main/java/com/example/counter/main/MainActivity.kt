@@ -34,17 +34,13 @@ class MainActivity : AppCompatActivity(), CounterView {
         binding.counterTv.text = count.toString()
     }
 
-    override fun checkCount(count: Int) {
+    override fun countIsTen() {
+        Toast.makeText(this, "Congratulations", Toast.LENGTH_SHORT).show()
+    }
 
-        when (count) {
-            10 -> Toast.makeText(this, "Congratulations", Toast.LENGTH_SHORT).show()
-            15 -> {
-                binding.counterTv.setTextColor(Color.GREEN)
-                binding.incrementBtn.setBackgroundColor(Color.GREEN)
-            }
-
-        }
-
+    override fun countIsFifteen() {
+        binding.counterTv.setTextColor(Color.GREEN)
+        binding.incrementBtn.setBackgroundColor(Color.GREEN)
     }
 
 }

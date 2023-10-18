@@ -4,6 +4,7 @@ interface CounterView {
 
     fun updateActualCount(count: Int)
 
-    fun checkCount(count: Int)
 
+    fun countIsTen()
+    fun countIsFifteen()
 }

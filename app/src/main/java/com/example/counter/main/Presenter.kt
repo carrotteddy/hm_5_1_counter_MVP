@@ -14,7 +14,10 @@ class Presenter {
     }
 
     fun checkCount(){
-        view.checkCount(model.count)
+        when(model.count){
+            10 -> view.countIsTen()
+            15 -> view.countIsFifteen()
+        }
     }
 
     fun attachView(view: CounterView) {

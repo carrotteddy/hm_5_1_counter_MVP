@@ -7,7 +7,7 @@ import com.example.counter.view.CounterView
 
 class MainActivity : AppCompatActivity(), CounterView {
 
-    private lateinit var binding:ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     private var presenter = Presenter()
 
     override fun onCreate(savedInstanceState: Bundle?) {

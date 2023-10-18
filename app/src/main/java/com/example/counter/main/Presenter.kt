@@ -13,7 +13,8 @@ class Presenter {
         view.updateActualCount(model.count)
     }
 
-    fun attachView(view: CounterView){
+    fun attachView(view: CounterView) {
         this.view = view
     }
+
 }
